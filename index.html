@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#flip2").click(function(){
+                $("#panel2").slideToggle("slow");
+            });
+        });
+    </script>
+
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+    <style>
+        #panel2, #flip2 {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel2 {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body bgcolor="#faebd7">
+<h1><marquee>FIRST DAY OF TRAINING</marquee></h1>
+<center>
+    <h2>WELCOME TO MY PAGE</h2>
+    <h3>SHRAVYA VANCHANAGIRI</h3>
+    <img src="pic.jpg" height="400" onclick="welcome()"><br>
+
+    <div id="flip">Click here to see my facebook profile link</div>
+    <div id="panel"><a href="https://www.facebook.com/lovely.smiley.754">click here to view my facebook profile</a><br></div>
+
+    <div id="flip2">Click here to see my linkedin profile link</div>
+    <div id="panel2"><a href="www.linkedin.com/in/shravya-vanchanagiri-a63248106">click here to view my linkedin profile</a><br></div>
+    <form name="form1" onsubmit="validate()">
+        <p>Enter my name:<input type="text" name="i1"></p>
+        <input type="submit" value="test">
+    </form>
+</center>
+</body>
+</html>
